@@ -52,7 +52,7 @@ const HomePageHeroSection = () => {
                     key={imageURL + index}
                     className={`transition absolute h-[90%] rounded-[20px] ${
                       currentLayer < index + 1
-                        ? " right-[110%] "
+                        ? " right-[150%] "
                         : " right-[17%] "
                     } ${
                       currentLayer > index + 1
