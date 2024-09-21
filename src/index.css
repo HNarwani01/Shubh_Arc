@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.item-content > div {
+  transform: translateY(20px);
+  animation: showblur 0.5s 1s linear 1 forwards;
+  filter: blur(10px);
+  opacity: 0;
+}
+@keyframes showblur {
+  to {
+    transform: translateY(-20px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.item-content .auther {
+  animation-delay: 0.2s;
+}
+.item-content .title {
+  animation-delay: 0.2s;
+}
+.item-content .description {
+  animation-delay: 0.2s;
+}
+.item-content .buttons {
+  animation-delay: 0.2s;
+}
+
+/* for no scroll bar */
+.no-Scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+/* common class to add transition  */
+.transition {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Scroll animation for when user see it became large and visible  */
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
