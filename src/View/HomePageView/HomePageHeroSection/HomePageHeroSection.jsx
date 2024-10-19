@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { WhatWeDoImages } from "../../Structure/Structure";
+import { WhatWeDoImages } from "../../../Structure/Structure";
 
 const HomePageHeroSection = () => {
   const [currentLayer, setCurrentLayer] = useState(1);

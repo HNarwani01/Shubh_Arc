@@ -1,6 +1,6 @@
-import HomePageCarousel from "../../Components/HomePageCarousel/HomePageCarousel";
-import HomePageHeroSection from "../../Components/HomePageHeroSection/HomePageHeroSection";
-import HomePageProject from "../../Components/HomePageProject/HomePageProject";
+import HomePageCarousel from "../../View/HomePageView/HomePageCarousel/HomePageCarousel";
+import HomePageHeroSection from "../../View/HomePageView/HomePageHeroSection/HomePageHeroSection";
+import HomePageProject from "../../View/HomePageView/HomePageProject/HomePageProject";
 
 const HomePage = () => {
   return (

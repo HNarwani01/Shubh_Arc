@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./HomePageProject.module.css";
-import { InteriorProject, ExteriorProject } from "../../Structure/Structure";
+import { InteriorProject, ExteriorProject } from "../../../Structure/Structure";
 const HomePageProject = () => {
   const [currentCard, setCurrentCard] = useState(3);
   const handleSliderChange = (dir) => {
